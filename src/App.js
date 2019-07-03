@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import DraftEditor from './DraftEditor'
+import DraftHookedEditor from './DraftHookedEditor'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <DraftEditor />
+        <DraftHookedEditor />
       </header>
     </div>
   )
