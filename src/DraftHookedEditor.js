@@ -1,9 +1,13 @@
 import { Editor } from '@draft-js-hooks/editor'
+import { getHashtagHook } from '@draft-js-hooks/hashtag'
 import { EditorState } from 'draft-js'
 import 'draft-js/dist/Draft.css'
 import React, { useCallback, useRef, useState } from 'react'
+import './DraftHookedEditor.css'
 
-const hooks = []
+const HashtagHook = getHashtagHook()
+
+const hooks = [HashtagHook]
 
 function DraftHookedEditor() {
   const store = useRef(null)

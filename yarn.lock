@@ -915,6 +915,11 @@
   resolved "https://registry.yarnpkg.com/@draft-js-hooks/editor/-/editor-0.1.0.tgz#52a69bb0218fdca7d86087103c6dd82ce6ca77f0"
   integrity sha512-nTnzMEIXJO+pzwxbkV8HBSGrP5EfPvk9dSLvHzOugqC+fCehQauDg1fqhILr9KyrZQoxsqhfsaDrPSL95Xgyrw==
 
+"@draft-js-hooks/hashtag@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@draft-js-hooks/hashtag/-/hashtag-0.1.0.tgz#e01028a69093bb54d84719eb86cf7499b94633f8"
+  integrity sha512-d07zYmUglwWpmuaWdtgzndnoHJiAuCStXVPUm/v6nA6ZONeOvBWCs0x9yD1c8i4AU0qixajeDFlflCHWVFPekA==
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"

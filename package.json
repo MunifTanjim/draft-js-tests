@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@draft-js-hooks/editor": "^0.1.0",
+    "@draft-js-hooks/hashtag": "^0.1.0",
     "draft-js": "^0.11.0-beta3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
