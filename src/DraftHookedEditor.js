@@ -1,9 +1,12 @@
 import { Editor } from '@draft-js-hooks/editor'
+import { getStatsHook } from '@draft-js-hooks/stats'
 import { EditorState } from 'draft-js'
 import 'draft-js/dist/Draft.css'
 import React, { useCallback, useRef, useState } from 'react'
 
-const hooks = []
+const { Stats, ...StatsHook } = getStatsHook()
+
+const hooks = [StatsHook]
 
 function DraftHookedEditor() {
   const store = useRef(null)
@@ -29,6 +32,8 @@ function DraftHookedEditor() {
         hooks={hooks}
         store={store}
       />
+      <hr />
+      <Stats />
     </div>
   )
 }
