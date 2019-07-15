@@ -1,10 +1,15 @@
 import { Editor, EditorState } from "draft-js"
 import "draft-js/dist/Draft.css"
-import React, { useCallback, useRef, useState } from "react"
+import React, { useCallback, useEffect, useRef, useState } from "react"
 
 function DraftEditor() {
   const editor = useRef(null)
   const [editorState, setEditorState] = useState(EditorState.createEmpty())
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const onChange = useCallback(editorState => {
     setEditorState(editorState)
@@ -16,12 +21,14 @@ function DraftEditor() {
 
   return (
     <div onClick={focus} style={{ width: "320px", padding: "1em" }}>
-      <Editor
-        ref={editor}
-        editorState={editorState}
-        onChange={onChange}
-        placeholder="Draft.js Tests..."
-      />
+      {mounted ? (
+        <Editor
+          ref={editor}
+          editorState={editorState}
+          onChange={onChange}
+          placeholder="Draft.js Tests..."
+        />
+      ) : null}
     </div>
   )
 }
