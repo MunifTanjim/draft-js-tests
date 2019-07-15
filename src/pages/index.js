@@ -1,12 +1,12 @@
 import React from "react"
-import DraftEditor from "../components/DraftEditor.js"
+import DraftHookedEditor from "../components/DraftHookedEditor"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <DraftEditor />
+    <DraftHookedEditor />
   </Layout>
 )
 

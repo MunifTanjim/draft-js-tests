@@ -750,6 +750,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@draft-js-hooks/editor@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@draft-js-hooks/editor/-/editor-0.1.0.tgz#52a69bb0218fdca7d86087103c6dd82ce6ca77f0"
+  integrity sha512-nTnzMEIXJO+pzwxbkV8HBSGrP5EfPvk9dSLvHzOugqC+fCehQauDg1fqhILr9KyrZQoxsqhfsaDrPSL95Xgyrw==
+
 "@gatsbyjs/relay-compiler@2.0.0-printer-fix.2":
   version "2.0.0-printer-fix.2"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/relay-compiler/-/relay-compiler-2.0.0-printer-fix.2.tgz#214db0e6072d40ea78ad5fabdb49d56bc95f4e99"
